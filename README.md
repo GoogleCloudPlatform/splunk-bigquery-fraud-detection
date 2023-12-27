@@ -6,7 +6,7 @@ _might take few seconds to load the media_
 ![Results](FD.gif)
 
 
-### Geneerate some data
+### Generate some data
 ```bash 
 # start_date = '2023-01-01'
 # end_date = '2023-03-31'
