@@ -2,6 +2,7 @@
 ![High Level Architecture](FD.png)
 ### Results
 
+_might take few seconds to load the media_
 ![Results](FD.gif)
 
 
