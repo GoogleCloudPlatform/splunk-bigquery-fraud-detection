@@ -1,10 +1,12 @@
-### Fraud(Anomaly) Detection with Splunk 
-![High Level Architecture](FD.png)
-### Results
+# Fraud Detection with Splunk and BigQuery
+This project shows how customers can use Splunk and GCP BigQuery to do anomaly detection on financial transactions by ingesting data, training the model, and detecting the fraudulent transactions. Data used is sample data without PII.
 
+### Fraud (Anomaly) Detection with Splunk 
+![High Level Architecture](FD.png)
+
+### Results
 _might take few seconds to load the media_
 ![Results](FD.gif)
-
 
 ### Generate some data
 ```bash 
@@ -12,15 +14,14 @@ _might take few seconds to load the media_
 # end_date = '2023-03-31'
 python datagen.py
 ```
-### Load generated data to BigQuery
 
+### Load generated data to BigQuery
 ![](load_data.gif)
 
 ### Create Model for Anomaly Detection in BigQuery
-
 Execute the ```create_model.sql``` script in BigQuery
 
-### Geneerate some more data that will be ingested to Splunk
+### Generate some more data that will be ingested to Splunk
 ```bash 
 # start_date = '2023-04-01'
 # end_date = '2023-04-3'
@@ -47,3 +48,17 @@ Results
 
 ![Results](FD.gif)
 
+### License
+Copyright 2024 Google LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
