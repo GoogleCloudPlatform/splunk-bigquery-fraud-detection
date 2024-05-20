@@ -1,5 +1,7 @@
 # Fraud Detection with Splunk and BigQuery
-This project shows how customers can use Splunk and GCP BigQuery to do anomaly detection on financial transactions by ingesting data, training the model, and detecting the fraudulent transactions. Data used is sample data without PII.
+This project shows how customers can use Splunk and GCP BigQuery to do anomaly detection on financial transactions by ingesting data, training the model, and detecting the fraudulent transactions. Data used is randomly generated sample data without PII.
+
+This project assumes that you already have a Splunk instance and a GCP BigQuery table. The creation, maintenance, and deletion of these upstream resources are outside the scope of this project.
 
 ### Fraud (Anomaly) Detection with Splunk 
 ![High Level Architecture](FD.png)
